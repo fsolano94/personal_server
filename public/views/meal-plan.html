@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>New - Meal Plan</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<!--Load socket.io script-->
+<script src="/socket.io/socket.io.js"></script>
+<script src="../lib/jquery-1.11.2.js"></script>
+
+<body>
+
+    <table>
+        <thead>
+        <input class="description" id='title' placeholder="Enter a description for this meal plan">
+        </thead>
+
+        <!--Meal Labels-->
+        <tr>
+            <td class="day"></td>
+            <td id="mealNames">
+                <input class="cell" value="Breakfast" id="meal1">
+                <input class="cell" value="Lunch" id="meal2">
+                <input class="cell" value="Dinner" id="meal3">
+                <input class="cell" value="Shake" id="meal4">
+            </td>
+        </tr>
+
+        <!--Rows, for each day of the week-->
+        <tr>
+            <td class="day">Mo</td>
+            <td id="Monday">
+                <textarea class="cell" id="monday1"></textarea>
+                <textarea class="cell" id="monday2"></textarea>
+                <textarea class="cell" id="monday3"></textarea>
+                <textarea class="cell" id="monday4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="day">Tu</td>
+            <td id="Tuesday">
+                <textarea class="cell" id="tuesday1"></textarea>
+                <textarea class="cell" id="tuesday2"></textarea>
+                <textarea class="cell" id="tuesday3"></textarea>
+                <textarea class="cell" id="tuesday4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="day">We</td>
+            <td id="Wednesday">
+                <textarea class="cell" id="wednesday1"></textarea>
+                <textarea class="cell" id="wednesday2"></textarea>
+                <textarea class="cell" id="wednesday3"></textarea>
+                <textarea class="cell" id="wednesday4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="day">Th</td>
+            <td  id="Thursday">
+                <textarea class="cell" id="thursday1"></textarea>
+                <textarea class="cell" id="thursday2"></textarea>
+                <textarea class="cell" id="thursday3"></textarea>
+                <textarea class="cell" id="thursday4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="day">Fr</td>
+            <td id="Friday">
+                <textarea class="cell" id="friday1"></textarea>
+                <textarea class="cell" id="friday2"></textarea>
+                <textarea class="cell" id="friday3"></textarea>
+                <textarea class="cell" id="friday4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="day">Sa</td>
+            <td id="Saturday">
+                <textarea class="cell" id="saturday1"></textarea>
+                <textarea class="cell" id="saturday2"></textarea>
+                <textarea class="cell" id="saturday3"></textarea>
+                <textarea class="cell" id="saturday4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="day">Su</td>
+            <td id="Sunday">
+                <textarea class="cell" id="sunday1"></textarea>
+                <textarea class="cell" id="sunday2"></textarea>
+                <textarea class="cell" id="sunday3"></textarea>
+                <textarea class="cell" id="sunday4"></textarea>
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+    <button id="btn-cancel">Cancel</button>
+    <button id="btn-save">Save</button>
+</body>
+
+<script src="../js/meal-plan.js"></script>
+</html>

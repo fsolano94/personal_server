@@ -1,0 +1,47 @@
+body {
+    margin: 100px 2% 0 2%;
+}
+
+input.description {
+    width: 300px;
+    margin: 0px 0px 10px 20px;
+    font-size: 14px;
+}
+
+td.day {
+    width: 30px;
+    font-size: 26px;
+}
+
+input.cell {
+    width: 180px;
+    font-size: 16px;
+    text-align: center;
+}
+
+textarea.cell {
+    width: 180px;
+    height: 60px;
+    resize: none;
+}
+
+/* Classes for Workout Pages */
+
+.indent {
+    margin: 0px 0px 10px 20px;
+}
+
+input.field {
+    width: 300px;
+    font-size: 14px;
+}
+
+textarea.workout {
+    font-size: 14px;
+}
+
+label.tip {
+    font-size: 12px;
+}
+
+

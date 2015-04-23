@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Workout Editor</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="../lib/jquery-1.11.2.js"></script>
+
+<body>
+    <div>
+        <label class="tip indent">Format: MM/DD/YYYY  (required)</label> <br>
+        <input class="indent field" placeholder="workout date" id="date"> <br> <br>
+
+        <input class="field" placeholder="workout name" id="name"> <br> <br>
+
+        <textarea class="workout" rows="8" cols="100" placeholder="enter workout details here." id="details"></textarea> <br>
+
+        <label class="tip">Tip: Use line breaks to go to the next line.</label> <br>
+        <label class="tip">Tip: You can resize the text area to meet unique needs, per workout.</label>
+
+        <br> <br> <br> <br>
+
+        <button id="btn-cancel">Cancel</button>
+        <button id="btn-save">Save</button>
+    </div>
+</body>
+
+<script src="../js/workout-editor.js"></script>
+</html>

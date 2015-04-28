@@ -32,6 +32,6 @@ unmanageable.
 
 ## Bugs
 
-- When a workout is accessed, the data is not properly populated into the html page.
+- there are no bugs on my radar
 
 

@@ -3,7 +3,7 @@
 
 	// define a socket event for a successful query for the workout
 	socket.on('query-success', function(result) {
-		console.log("query-success called!! Data: " + result.data);
+		console.log("query-success called!! ");
 
 		populateForm(result.data);
 	});
@@ -45,6 +45,7 @@
 		document.getElementById('btn-save').onclick = function() {
 			if(passesValidation()) {
 				var data = getFormData();
+				data._id = undefined || sessionStorage.WorkoutId;
 				socket.emit('saveWorkout', data);
 			}
 		};
@@ -52,7 +53,7 @@
 
 	function populateForm(data) {
 		$('#date')[0].value = data.date;
-		$('#date')[0].value = data.name;
+		$('#name')[0].value = data.name;
 		$('#details')[0].value = data.details;
 
 	}

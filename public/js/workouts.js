@@ -52,7 +52,7 @@
 				var linebreak2 = document.createElement("br");
 
 				label.innerText = workout.date + '..............................' + workout.name;
-				button.innerText = 'Open Workout';
+				button.innerText = 'Edit Workout';
 				button.classList.add('indent');
 
 				button.onclick = function() {

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IM client</title>
+    <link rel="stylesheet" href="../css/client.css">
+</head>
+
+<!--Load socket.io script-->
+<script src="/socket.io/socket.io.js"></script>
+
+<body>
+
+    <div class="con-username">
+        <input id="chatUsername" placeholder="Enter Username...">
+        <button id="chatUsernameBtn">Submit Username</button>
+    </div>
+
+    <div class="con-chat">
+        <textarea rows="30" readonly class="chat-window" id="chatWindow">Welcome to IM Chat!</textarea>
+        <br>
+        <button class="chat-button" id="chatTextBtn">Send</button>
+        <span class="chat-span"><input class="chat-input" id="chatText" placeholder="enter your text here..."></span>
+
+    </div>
+
+</body>
+
+<!-- Load controller script after DOM loads -->
+<script src="../js/client.js"></script>
+</html>
